@@ -8,9 +8,9 @@ $email = new Email;
 
 $subject  = "Primeiro email";
 $body = "Email enviado usando PHPMailer";
-$recipient_name = " Teste";
-$recipient_email = "teste@gmail.com";
-$email->add($subject, $body, $recipient_name, $recipient_email)->send();
+$recipientName = " Teste";
+$recipientEmail = "teste@gmail.com";
+$email->add($subject, $body, $recipientName, $recipientEmail)->send();
 
 if(!$email->error()){
     var_dump("Email enviado!");
